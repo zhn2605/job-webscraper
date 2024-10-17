@@ -5,14 +5,18 @@ import time
 def scrape_website(website):
     print("Launching browser...")
 
-    opera_driver_path = r"C:\Users\zziha\Projects\JobWebscraper\JobWebscraper\operadriver_win64\operadriver.exe"
-    opera_exe_path = r"C:\Users\zziha\AppData\Local\Programs\Opera GX\opera.exe"
+    chrome_driver_path = "./chromedriver-win64/chromedriver.exe"
+    # opera_exe_path = r"C:\Users\zziha\AppData\Local\Programs\Opera GX\opera.exe"
     
     options = webdriver.ChromeOptions()
-    options.binary_location = opera_exe_path
-    options.add_experimental_option('w3c', True)
-    webdriver_service = Service(opera_driver_path)
-    driver = webdriver.Remote(webdriver_service, options=options)
+    # options.binary_location = opera_exe_path
+    # options.add_experimental_option('w3c', True)
+
+    # Create driver path
+    # webdriver_service = service.Service(opera_driver_path)
+
+    # Init driver using chrome service and options
+    driver = webdriver.Chrome(service=Service(chrome_driver_path), options=options)
 
     try:
         driver.get(website)
