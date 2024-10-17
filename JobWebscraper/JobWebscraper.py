@@ -19,7 +19,6 @@ soup = BeautifulSoup(page.text, "html.parser")
 all_col_divs = soup.findAll("div", class_="div-col")
 
 # print(all_col_divs)
-#ag = ancient greek
 
 name_section = all_col_divs[0]
 
@@ -33,4 +32,4 @@ if name_section:
         if "title" in name.attrs:
             print(name.get("title"))
 else:
-    print("No such section")
+    print("No such section.")
