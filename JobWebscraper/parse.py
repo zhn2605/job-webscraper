@@ -8,7 +8,7 @@ template = (
     "1. **Extract Information:** Only extract information DIRECTLY given from {dom_content}."
     "2. **No Extra Content:** Do not provide any extra information besides those that directly matches the provided description: {parse_description}."
     "3. **Empty Response / NA Response:** If no informaiton matches the description, return an empty string (or 'Quack quack.. no matches.')"
-    "4. **Direct Data Only:** Using NO OTHER CONTENT, your output should contain only the data that is explicitly REQUESTED ({parse_description}) and explicitly PROVIDED ({dom_content})"
+    "4. **Direct Data Only:** Using NO OTHER CONTENT, your output should contain only the data that is explicitly PROVIDED. No additional comments, analysis text, or explanation in your response."
     "5. **Exit Message:** When you see messages like 'Exit', 'Stop', or any related prompt to stop the program, you MUST say goodbye with a duck pun / joke."
 )
 
