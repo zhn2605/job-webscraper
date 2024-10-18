@@ -6,16 +6,14 @@ import time
 def scrape_website(website):
     print("Launching browser...")
 
-    chrome_driver_path = r"C:\Users\zziha\Projects\JobWebscraper\JobWebscraper\chromedriver-win64\chromedriver.exe"
-    # opera_exe_path = r"C:\Users\zziha\AppData\Local\Programs\Opera GX\opera.exe"
-    
+    chrome_driver_path = r"C:\Users\zziha\Projects\JobWebscraper\JobWebscraper\chromedriver.exe"
     options = webdriver.ChromeOptions()
 
     # Init driver using chrome service and options
     driver = webdriver.Chrome(service=Service(chrome_driver_path), options=options)
 
     try:
-        driver.get(website)
+        driver.get(website) 
         # Potential Captcha solver
 
 

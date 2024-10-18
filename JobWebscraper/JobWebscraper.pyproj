@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>11a2238e-93c2-44a3-bc4d-a57d97925c3d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>JobWebscraper.py</StartupFile>
+    <StartupFile>practice.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,8 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="JobWebscraper.py" />
+    <Compile Include="parse.py" />
+    <Compile Include="practice.py" />
     <Compile Include="main.py" />
     <Compile Include="scrape.py" />
   </ItemGroup>
